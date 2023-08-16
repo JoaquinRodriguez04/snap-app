@@ -1,8 +1,8 @@
 import React from 'react'
 
-const DropdownCompany = () => {
+const DropdownCompany = ({company}) => {
   return (
-    <div className='dropdown-container dropdown-company'>
+    <div className={`dropdown-container ${company && 'dropdown-asset'} dropdown-company`}>
       <ul className='dropdown-ul-wrapper'>
         <li className='dropdown-li-item'>
           History
