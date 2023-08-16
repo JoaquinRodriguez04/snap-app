@@ -4,10 +4,10 @@ import calender from '../assets/icon-calendar.svg';
 import Reminders from '../assets/icon-Reminders.svg';
 import Planning from '../assets/icon-planning.svg';
 
-const DropdownFeatures = () => {
+const DropdownFeatures = ({features}) => {
   return (
     <div 
-    className="dropdown-container dropdown-features">
+    className={`dropdown-container ${features && 'dropdown-asset'} dropdown-features`}>
         <ul className='dropdown-ul-wrapper'>
             <li className='dropdown-li-item'>
                 <img src={todo} alt="image-of-todo" />
