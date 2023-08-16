@@ -4,8 +4,6 @@ import LiFeatures from './LiFeatures';
 import LiCompany from './LiCompany';
 import DropdownFeatures from './DropdownFeatures';
 import DropdownCompany from './DropdownCompany';
-import LogoImage from './LogoImage';
-
 
 const NavBarLeft = () => {
 
@@ -29,11 +27,11 @@ const NavBarLeft = () => {
                 <ul className='ul-wrapper'>
                     <button className='btn-ul-navbar'>
                         <LiFeatures handleFeatures={handleFeatures} features={features}/>
-                        {features && <DropdownFeatures />} 
+                        <DropdownFeatures features={features}/> 
                     </button>
                     <button className='btn-ul-navbar'>
                         <LiCompany handleCompany={handleCompany} company={company}/>
-                        {company && <DropdownCompany />}  
+                        <DropdownCompany company={company}/>  
                     </button>
                     <button>
                         <li>Careers</li>
