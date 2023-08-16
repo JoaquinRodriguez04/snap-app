@@ -155,7 +155,13 @@ button:hover{
     margin-top: .8em;
     box-shadow: 1px 1px 30px rgba(0, 0, 0, .1);
     cursor: default;
-    z-index: 100;
+    transform:translateY(-200%);
+    transform-origin: top;
+    transition: .2s;
+}
+
+.dropdown-asset{
+    transform: translateY(0);
 }
 
 .dropdown-ul-wrapper{
